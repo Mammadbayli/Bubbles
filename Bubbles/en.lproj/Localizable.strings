@@ -1,0 +1,198 @@
+/* 
+  Localizable.strings
+  Bubbles
+
+  Created by Javad Mammadbayli on 11/10/19.
+  Copyright © 2019 Javad Mammadbayli. All rights reserved.
+*/
+
+"submit"= "Submit";
+"search"= "Search";
+"find"= "Find";
+"retry"= "Retry";
+"edit"= "Edit";
+"send"= "Send";
+"warning"= "Warning";
+"cancel"= "Cancel";
+"yes"= "OK";
+"search_no_results" = "Nothing found try again.";
+
+"phone_number_placeholder"= "0xx xxx xx xx (mob.)";
+
+//Navigation titles
+"friends"= "Friends";
+"chats"= "Chats";
+"global_groups"= "Market";
+"account"= "Account";
+"settings"= "Settings";
+"friend_requests"= "Friend requests";
+
+//Welcome screen
+"log_in"= "Log in";
+"get_started"= "Get started";
+"username"= "Username";
+"password"= "Password";
+"fb_login"= "Login with Facebook";
+"invalid_credentials"= "The username or password you entered did not match our records. Please double-check and try again.";
+"forgot_password" = "Forgot Password?";
+"welcome_hint" = "Enter your car's license plate number and let's go!";
+
+//Registration certificate screen
+"registration_certificate"= "Registration Certificate";
+"registration_registration_certificate_tip"= "Your request will be sent for approval. Approval message will be received later.";
+"registration_certificate_warning"= "\nPlease provide registration photo.\n\n";
+"registration_certificate_tip"= "Make sure all information is clear to scan by application.";
+
+//Phone verification screen
+"verify_number"= "Verify number";
+"phone_number_tip"= "Please enter your telephone number";
+
+//SMS verification screen
+"sms_code_placeholder"= "Enter code";
+"sms_code_verify"= "Verify";
+"sms_code_resend"= "Get new code";
+"sms_code_tip"= "Please enter SMS that was sent to you";
+
+//Success scren
+"success"= "Success!";
+"number_verification_success"= "Your number is verified";
+"continue"= "Continue";
+
+//User info screen
+"name_of_user"= "Name";
+"surname_of_user"= "Surname";
+"confirm_password"= "Confirm password";
+"password_mismatch_error"= "Passwords should match";
+"password_policy_rule"= "Password should be at least 6 signs";
+
+//Settings screen
+"settings_saved_messages"= "Saved messages and posts";
+"saved_messages.empty_list" = "No saved messages to show.";
+"settings_change_license_plate"= "Change your car";
+"settings_notfications_and_alerts" = "Notifications and alerts";
+"settings_language"= "Language";
+"settings_support"= "Support";
+"settings_log_out"= "Log out";
+"settings_log_out_warning"= "You want to leave application?";
+"settings_delete_accountt"= "Delete your account";
+
+//Delete account screen
+"delete_account_warning"= "Are you sure you want to delete your account?";
+"yes_delete"= "Yes, Delete";
+
+//Add friends screen
+"suggested_friends"= "Suggested friends";
+
+//Friend requests
+"friend_requests_add_page_title"= "Add friend";
+"friend_requests_accept_request"= "Accept";
+"friend_requests_decline_request"= "Decline";
+"friend_requests_request_sent"= "Friend request sent";
+"friend_requests_request_accepted" = "✓\nAccepted";
+"friend_requests_request_declined" = "✗\nDeclined";
+"friend_requests_nobody_found"= "Nobody found";
+"friend_requests_send_request"= "Send request";
+
+//Global groups screen
+"cars_category"= "Cars";
+"saloons_category"= "Saloons";
+"services_category"= "Services";
+
+//User support screen
+"or_contact_us"= "Or contact us:";
+
+//Notifications and alerts screen
+"show_notifications"= "Show Notifications";
+"sound"= "Sound";
+"notification_sound_picker_title"= "Pick a sound";
+
+//Edit license plate screen
+"change_username_button_title"= "Change car";
+"change_username_attach_documents"= "Attach";
+
+//Post screen
+"write_a_comment"= "Write a comment";
+
+//Chats
+"forwarded"= "Forwarded";
+"message"= "Message";
+"message_from_you" = "You";
+
+//Last Activity
+"last_activity.online"= "Online";
+"last_activity.offline"= "Offline";
+"last_activity.justNow"= "Online just now";
+"last_activity.online_minutes_ago"= "Online %d minutes ago";
+"last_activity.online_hours_ago"= "Online %d hours ago";
+"last_activity.online_yesterday"= "Online yesterday";
+"last_activity.online_exact_date"= "Online %@";
+
+//Chat Status
+"chat.status.typing"= "typing...";
+
+//Message actions
+"save"= "Save";
+"unsave"= "Unsave";
+"copy"= "Copy";
+"reply"= "Reply";
+"forward"= "Forward";
+"delete"= "Delete";
+
+//Post actions
+"post_comments"= "%lu Comments";
+"post_share"= "Share";
+
+//Account screen
+"user_full_name"= "Name Surname";
+"user_name"= "Name";
+"user_surname"= "Surname";
+"user_phone-number"= "Phone Number";
+"user_career"= "Career";
+"user_about"= "Status";
+"user_education"= "Education";
+"user_interests"= "Interests";
+
+//Select from contacts
+"select_from_contacts"= "Select from contacts";
+"recent_chats"= "Recent chats";
+
+//StickyInput
+"sticky_input_slide_to_cancel"= "<  Slide to cancel";
+"photo_source_camera"= "Camera";
+"photo_source_photos"= "Photos";
+
+//Crate post screen
+"create_post"= "Start a post";
+"send_post"= "Post";
+
+//Registration status
+"registration_status_pending_hint"= "Your request is under checking. Please wait for notification.";
+"registration_status_rejected_incorrect_documents_hint"= "You have been rejected due to incorrect document. Please try again.";
+"registration_status_rejected_illegible_documents_hint"= "You have been rejected due to, the document, which you provided can not be read. Please try again.";
+"registration_status_approved_hint" = "Congratulations, You are approved! Verify now to continue.";
+"registration_status_failed_to_fetch_hint" = "Could not get status! Check back later.";
+"registration_status_fetching_hint"= "Loading status...";
+"registration_status_verify_now"= "Verify now!";
+"registration_status_try_again"= "Try again";
+
+//
+"photos_access_denied"= "It seems you have not granted access to use your photos. Please do so by going to the Settings on your iPhone";
+
+//
+"self_shared_post_message_body"= "You shared a post";
+"others_shared_post_message_body"= "Shared a post";
+"voice_message_body"= "Voice";
+"photo_message_body"= "Photo";
+
+//
+"password_reset_link_success" = "Password reset link is sent via SMS";
+
+"API_CANCEL_TITLE" = "Cancel";
+
+//Roster
+"roster.cell.pendingRequest" = "Request pending";
+"roster.empty_list" = "You don't have friends yet, try adding one!";
+
+//Posts
+"posts.empty_list" = "No posts to show. Write the first post!";
+

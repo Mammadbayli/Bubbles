@@ -1,0 +1,197 @@
+/* 
+  Localizable.strings
+  Bubbles
+
+  Created by Javad Mammadbayli on 11/10/19.
+  Copyright © 2019 Javad Mammadbayli. All rights reserved.
+*/
+
+"submit"= "Təqdim et";
+"search"= "Axtar";
+"find"= "Tap";
+"retry"= "Yenidən cəhd elə";
+"edit"= "Düzəliş et";
+"send"= "Göndər";
+"warning"= "Xəbərdarlıq";
+"cancel"= "Yox";
+"yes"= "Hə";
+"search_no_results" = "Heç nə tapılmadı, yenidən cəhd edin.";
+
+"phone_number_placeholder"= "0xx xxx xx xx (mob.)";
+
+//Navigation titles
+"friends"= "Dostlar";
+"chats"= "Söhbətlər";
+"global_groups"= "Market";
+"account"= "Hesab";
+"settings"= "Ayarlar";
+"friend_requests"= "Dost istəkləri";
+
+//Welcome screen
+"log_in"= "Daxil ol";
+"get_started"= "Başla";
+"username"= "İstifadəçi adı";
+"password"= "Şifrə";
+"fb_login"= "Facebookla daxil ol";
+"invalid_credentials"= "Daxil etdiyiniz istifadəçi adı və ya şifrə qeydlərimizə uyğun gəlmədi. Xahiş edirik yenidən yoxlayın və cəhd edin.";
+"forgot_password" = "Şifrəni unutmusunuz?";
+"welcome_hint" = "Avtomobilinizin nömrəsini daxil edin və getdik!";
+
+//Registration certificate screen
+"registration_certificate"= "Qeydiyyat şəhadətnaməsi";
+"registration_registration_certificate_tip"= "Sizin sorğunuz təsdiq üçün göndəriləcək. Bildiriş mesajı isə təsdiqdən sonra göndəriləcək.";
+"registration_certificate_warning"= "\nZəhmət olmasa avtomobilin texniki passportunu yükləyin.\n\n";
+"registration_certificate_tip"= "Bütün məlumatların asanliga oxunmağına əmin olun.";
+
+//Phone verification screen
+"verify_number"= "Nömrəni doğrulayın";
+"phone_number_tip"= "Zəhmət olmasa telefon nömrənizi daxil edin";
+
+//SMS verification screen
+"sms_code_placeholder"= "Kodu daxil edin";
+"sms_code_verify"= "Doğrulamaq";
+"sms_code_resend"= "Yeniden kod alın";
+"sms_code_tip"= "Zəhmət olmasa təsdiq mesajını daxil edin.";
+
+//Success scren
+"success"= "Uğurlu!";
+"number_verification_success"= "Nömrəniz təsdiqləndi";
+"continue"= "Davam et";
+
+//User info screen
+"name_of_user"= "Ad";
+"surname_of_user"= "Soyad";
+"confirm_password"= "Şifrəni təsdiq et";
+"password_mismatch_error"= "Parollar uyğun olmalıdır";
+"password_policy_rule"= "Şifrə minimum 6 uzunluğa sahib olmalıdır";
+
+//Settings screen
+"settings_saved_messages"= "Saxlanılan mesajlar və yazılar";
+"saved_messages.empty_list" = "Saxlanılan mesajlar yoxdur.";
+"settings_change_license_plate"= "Avtomobilinizi dəyişdirin";
+"settings_notfications_and_alerts" = "Bildirişlər və siqnallar";
+"settings_language"= "Dil";
+"settings_support"= "Dəstək";
+"settings_log_out"= "Çıxış";
+"settings_log_out_warning"= "Siz sistemnən cıxış etmək istiyirsiz?";
+"settings_delete_accountt"= "Hesabınızı silin";
+
+//Add friends screen
+"suggested_friends"= "Təklif olunan dostlar";
+
+//Friend requests screen
+"friend_requests_add_page_title"= "Dost əlavə et";
+"friend_requests_accept_request"= "Qəbul";
+"friend_requests_decline_request"= "Imtina";
+"friend_requests_request_sent"= "Dostluq təklifi göndərildi";
+"friend_requests_request_accepted" = "✓\Qəbul edildi";
+"friend_requests_request_declined" = "✗\İmtina edildi";
+"friend_requests_nobody_found"= "Heç kim tapılmadı";
+"friend_requests_send_request"= "Sorğu göndərin";
+
+//Global groups screen
+"cars_category"= "Avtomobil";
+"saloons_category"= "Salonlar";
+"services_category"= "Xidmətlər";
+
+//User support screen
+"or_contact_us"= "Və ya bizimlə əlaqə saxlayin:";
+
+//Notifications and alerts screen
+"show_notifications"= "Bildirişləri göstər";
+"sound"= "Səs";
+"notification_sound_picker_title"= "Səs seçin";
+
+//Edit license plate screen
+"change_username_button_title"= "Avtonu dəyiş";
+"change_username_attach_documents"= "Əlavə et";
+
+//Delete account screen
+"delete_account_warning"= "Hesabınızı silməyinizə əminsiniz?";
+"yes_delete"= "Bəli, Sil";
+
+//Post screen
+"write_a_comment"= "Şərh yazın";
+
+//Chats
+"forwarded"= "Yönləndirilib";
+"message"= "Mesajınız";
+"message_from_you" = "Siz";
+
+//Last activity
+"last_activity.online"= "Onlayn";
+"last_activity.offline"= "Offlayn";
+"last_activity.justNow"= "İndicə onlayn idi";
+"last_activity.online_minutes_ago"= "Onlayn %d dəqiqə əvvəl";
+"last_activity.online_hours_ago"= "Onlayn %d saat əvvəl";
+"last_activity.online_yesterday"= "Onlayn dünən";
+"last_activity.online_exact_date"= "Onlayn %@";
+
+//Chat Status
+"chat.status.typing"= "yazır...";
+
+//Message actions
+"save"= "Saxla";
+"unsave"= "Unut";
+"copy"= "Kopyala";
+"reply"= "Cavab ver";
+"forward"= "Ötur";
+"delete"= "Sil";
+
+//Post actions
+"post_comments"= "%lu Komment";
+"post_share"= "Paylaş";
+
+//Account screen
+"user_full_name"= "Ad soyadı";
+"user_name"= "Adı";
+"user_surname"= "Soyadı";
+"user_phone-number"= "Telefon nömrəsi";
+"user_career"= "Karyera";
+"user_about"= "Status";
+"user_education"= "Təhsil";
+"user_interests"= "Maraqlar";
+
+//Select from contacts
+"select_from_contacts"= "Kontaktlardan seçin";
+"recent_chats"= "Son söhbətlər";
+
+//StickyInput
+"sticky_input_slide_to_cancel"= "< Ləğv etmək üçün sürüşdürün";
+"photo_source_camera"= "Kamera";
+"photo_source_photos"= "Albom";
+
+//Crate post screen
+"create_post"= "Yeni post";
+"send_post"= "Göndər";
+
+//Registration status
+"registration_status_pending_hint"= "Sizin sorğunuz yoxlama prosesindədir. Təsdiq mesajı sizə göndəriləcəkdir.";
+"registration_status_approved_hint" = "Təbriklər, təsdiqləndiniz! Davam etmək üçün indi doğrulayın.";
+"registration_status_rejected_incorrect_documents_hint"= "Sənəd səhv olduğuna görə rədd edildi. Xahiş edirik yenidən cəhd edin.";
+"registration_status_rejected_illegible_documents_hint"= "Təqdim etdiyiniz sənəd oxunmaması səbəbindən rədd edildi. Xahiş edirik yenidən cəhd edin.";
+"registration_status_failed_to_fetch_hint" = "Status alınmadı! Sonra yoxlayın.";
+"registration_status_fetching_hint"= "Status yüklənir ...";
+"registration_status_verify_now"= "İndi doğrulayın!";
+"registration_status_try_again"= "Yenidən cəhd edin";
+
+//
+"photos_access_denied"= "Görünən odur ki, fotolarınızı istifadə etmək üçün icazə verməmisiniz. Xahiş edirik bunu iPhone'dakı Ayarlara gedərək edin";
+
+//
+"self_shared_post_message_body"= "Post paylaşdınız";
+"others_shared_post_message_body"= "Post paylaşdı";
+"voice_message_body"= "Səs";
+"photo_message_body"= "Foto";
+
+//
+"password_reset_link_success" = "Şifrənizi sıfırlama linki SMSlə göndərildi";
+
+"API_CANCEL_TITLE" = "Cancel";
+
+//Roster
+"roster.cell.pendingRequest" = "Hələ təsdiqləməyib";
+"roster.empty_list" = "Hələ dostlarınız yoxdur, bəzilərini əlavə etməyə çalışın!";
+
+//Posts
+"posts.empty_list" = "Göstəriləcək post yoxdur. İlk postu yazın!";

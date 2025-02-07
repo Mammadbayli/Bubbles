@@ -1,0 +1,63 @@
+default_platform :ios
+
+ENV["FASTLANE_XCODEBUILD_SETTINGS_TIMEOUT"] = "120"
+
+platform :ios do
+  lane :beta do
+    ensure_git_status_clean
+	ensure_git_branch(
+ 	 	branch: 'master'
+	)	
+
+	app_store_connect_api_key(
+  		key_id: ENV["APP_STORE_CONNECT_API_KEY_KEY_ID"],
+  		issuer_id: ENV["APP_STORE_CONNECT_API_KEY_ISSUER_ID"],
+  		key_content: ENV["APP_STORE_CONNECT_API_KEY_KEY"],
+		is_key_content_base64: ENV["APP_STORE_CONNECT_API_KEY_IS_KEY_CONTENT_BASE64"],
+		in_house: ENV["APP_STORE_CONNECT_API_KEY_IN_HOUSE"] #boolean value if team is Enterprise or not
+	)
+
+	match
+
+	increment_build_number({
+  		build_number: latest_testflight_build_number + 1
+	})
+
+	gym({
+        	include_bitcode: false
+    	})
+
+	changelog = read_changelog
+
+   	pilot(
+		app_identifier: CredentialsManager::AppfileConfig.try_fetch_value(:app_identifier),
+		changelog: changelog,
+		distribute_external: true,
+		groups: ["Early Testers"]
+	)
+	
+	clean_build_artifacts
+
+	build_number = get_build_number
+	version = get_version_number
+	stamp_changelog(section_identifier: "#{version} Build #{build_number}")
+	
+	commit_version_bump(
+ 	 	include: %w[CHANGELOG.md], # include other updated files as part of the version bump,
+ 		xcodeproj: "./Bubbles.xcodeproj"
+	)
+	
+	add_git_tag	
+
+	push_to_git_remote(
+	  	remote: "origin",         # optional, default: "origin"
+  		local_branch: "master",  # optional, aliased by "branch", default is set to current branch
+  		remote_branch: "master", # optional, default is set to local_branch
+  		#force: true,    # optional, default: false
+  		#force_with_lease: true,   # optional, default: false
+  		#tags: false,    # optional, default: true
+  		#no_verify: true,# optional, default: false
+  		#set_upstream: true        # optional, default: false
+	)
+  end
+end

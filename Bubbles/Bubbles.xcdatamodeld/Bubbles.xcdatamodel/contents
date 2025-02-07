@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="22757" systemVersion="23E224" minimumToolsVersion="Automatic" sourceLanguage="Objective-C" userDefinedModelVersionIdentifier="">
+    <entity name="Buddy" representedClassName="Buddy" syncable="YES">
+        <attribute name="isInRoster" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" transient="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="sectionTitle" attributeType="String" defaultValueString=""/>
+        <attribute name="surname" optional="YES" transient="YES" attributeType="String" defaultValueString=""/>
+        <attribute name="username" attributeType="String"/>
+        <relationship name="attributes" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="UserAttribute" inverseName="owner" inverseEntity="UserAttribute"/>
+        <relationship name="photos" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="UserPhoto" inverseName="owner" inverseEntity="UserPhoto"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="username"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="BuddyRequest" representedClassName="BuddyRequest" syncable="YES">
+        <attribute name="username" attributeType="String"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="username"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Chat" representedClassName="Chat" syncable="YES">
+        <attribute name="chatId" attributeType="String"/>
+        <attribute name="isComposing" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isOnline" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="unreadCount" optional="YES" attributeType="Integer 16" derived="YES" derivationExpression="messages.isUnread.@count" usesScalarValueType="YES"/>
+        <relationship name="latestMessage" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="ChatMessage"/>
+        <relationship name="messages" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="ChatMessage" inverseName="chat" inverseEntity="ChatMessage"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="chatId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ChatMessage" representedClassName="ChatMessage" isAbstract="YES" parentEntity="Message" syncable="YES">
+        <attribute name="deliveryStatus" attributeType="String" defaultValueString="none"/>
+        <attribute name="isForwarded" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <relationship name="chat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chat" inverseName="messages" inverseEntity="Chat"/>
+        <relationship name="forwardedMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatMessage" inverseName="forwardingMessage" inverseEntity="ChatMessage"/>
+        <relationship name="forwardingMessage" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatMessage" inverseName="forwardedMessage" inverseEntity="ChatMessage"/>
+        <relationship name="post" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Post"/>
+    </entity>
+    <entity name="ChatRoom" representedClassName="ChatRoom" syncable="YES">
+        <attribute name="icon" optional="YES" attributeType="URI"/>
+        <attribute name="isSubscribed" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="roomId" attributeType="String" defaultValueString=""/>
+        <attribute name="unreadCount" optional="YES" transient="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <relationship name="category" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoomCategory" inverseName="rooms" inverseEntity="ChatRoomCategory"/>
+        <relationship name="posts" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="Post" inverseName="room" inverseEntity="Post"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="roomId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="ChatRoomCategory" representedClassName="ChatRoomCategory" syncable="YES">
+        <attribute name="categoryId" attributeType="String"/>
+        <attribute name="icon" optional="YES" attributeType="URI"/>
+        <attribute name="name" optional="YES" attributeType="String"/>
+        <attribute name="unreadCount" optional="YES" transient="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <relationship name="rooms" optional="YES" toMany="YES" deletionRule="Nullify" ordered="YES" destinationEntity="ChatRoom" inverseName="category" inverseEntity="ChatRoom"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="categoryId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="Comment" representedClassName="Comment" parentEntity="Message" syncable="YES">
+        <relationship name="post" maxCount="1" deletionRule="Nullify" destinationEntity="Post" inverseName="comments" inverseEntity="Post"/>
+    </entity>
+    <entity name="File" representedClassName="File" syncable="YES">
+        <attribute name="name" attributeType="String"/>
+        <attribute name="type" attributeType="String" defaultValueString=""/>
+        <relationship name="message" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Message" inverseName="files" inverseEntity="Message"/>
+    </entity>
+    <entity name="Message" representedClassName="Message" isAbstract="YES" syncable="YES">
+        <attribute name="body" optional="YES" attributeType="String"/>
+        <attribute name="from" optional="YES" attributeType="String"/>
+        <attribute name="isStarred" optional="YES" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES"/>
+        <attribute name="isUnread" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="timestamp" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="to" optional="YES" attributeType="String"/>
+        <attribute name="uniqueId" attributeType="String"/>
+        <relationship name="files" optional="YES" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="File" inverseName="message" inverseEntity="File"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="uniqueId"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="PhotoMessage" representedClassName="PhotoMessage" parentEntity="ChatMessage" syncable="YES"/>
+    <entity name="Post" representedClassName="Post" parentEntity="Message" syncable="YES">
+        <attribute name="title" optional="YES" attributeType="String"/>
+        <attribute name="unreadCount" optional="YES" attributeType="Integer 16" derived="YES" derivationExpression="comments.isUnread.@count" usesScalarValueType="YES"/>
+        <relationship name="comments" toMany="YES" deletionRule="Cascade" ordered="YES" destinationEntity="Comment" inverseName="post" inverseEntity="Comment"/>
+        <relationship name="room" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatRoom" inverseName="posts" inverseEntity="ChatRoom"/>
+    </entity>
+    <entity name="PostMessage" representedClassName="PostMessage" parentEntity="ChatMessage" syncable="YES"/>
+    <entity name="TextMessage" representedClassName="TextMessage" parentEntity="ChatMessage" syncable="YES"/>
+    <entity name="UserAttribute" representedClassName="UserAttribute" syncable="YES">
+        <attribute name="isVisible" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <attribute name="value" optional="YES" attributeType="String"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Buddy" inverseName="attributes" inverseEntity="Buddy"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="username"/>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="UserPhoto" representedClassName="UserPhoto" syncable="YES">
+        <attribute name="index" attributeType="Integer 16" defaultValueString="-1" usesScalarValueType="YES"/>
+        <attribute name="name" attributeType="String"/>
+        <attribute name="username" attributeType="String"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Buddy" inverseName="photos" inverseEntity="Buddy"/>
+        <uniquenessConstraints>
+            <uniquenessConstraint>
+                <constraint value="name"/>
+            </uniquenessConstraint>
+        </uniquenessConstraints>
+    </entity>
+    <entity name="VoiceMessage" representedClassName="VoiceMessage" parentEntity="ChatMessage" syncable="YES">
+        <attribute name="duration" attributeType="Double" defaultValueString="-1" usesScalarValueType="YES"/>
+    </entity>
+</model>

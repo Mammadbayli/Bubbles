@@ -1,0 +1,4 @@
+git_url "https:"
+type "appstore"
+shallow_clone true
+username ""#Itunesconnect username

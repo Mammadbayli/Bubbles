@@ -1,0 +1,11 @@
+/* 
+  PhotoLibraryServices.strings
+  Bubbles
+
+  Created by Javad on 06.10.21.
+  Copyright © 2021 Javad Mammadbayli. All rights reserved.
+*/
+
+"PHOTOS" = "Photos";
+"CAMERA_ROLL" = "Camera roll";
+"ALL_SCREENSHOTS" = "Screenshots";

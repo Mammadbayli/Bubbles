@@ -1,0 +1,7 @@
+scheme "release"
+
+# sdk "iphoneos9.0"
+
+include_bitcode true
+include_symbols true
+output_directory "./build"

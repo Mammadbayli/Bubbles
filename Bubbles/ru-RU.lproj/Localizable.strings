@@ -1,0 +1,199 @@
+/* 
+  Localizable.strings
+  Bubbles
+
+  Created by Javad Mammadbayli on 11/10/19.
+  Copyright © 2019 Javad Mammadbayli. All rights reserved.
+*/
+
+"submit"= "Предoставить";
+"search"= "Поиск";
+"find"= "Hайти";
+"retry"= "Попробуйте еще раз";
+"edit"= "Редактировать";
+"send"= "Отправить";
+"warning"= "Предупреждение";
+"cancel"= "Отмена";
+"yes"= "Да";
+"search_no_results" = "Ничего не найдено, попробуйте еще раз.";
+
+"phone_number_placeholder"= "0xx xxx xx xx (моб.)";
+
+//Navigation titles
+"friends"= "Друзья";
+"chats"= "Чаты";
+"global_groups"= "Mаркет";
+"account"= "Aккаунт";
+"settings"= "Настройки";
+"friend_requests"= "Запросы в друзья";
+
+//Welcome screen
+"log_in"= "Bход";
+"get_started"= "Pегистрация";
+"username"= "Имя пользователя";
+"password"= "Пароль";
+"fb_login"= "Войти через Facebook";
+"invalid_credentials"= "Имя пользователя или пароль не соответствует введенным данным. Пожалуйста повторите ввод снова.";
+"forgot_password" = "Забыл пароль?";
+"welcome_hint" = "Введите номерной знак вашего автомобиля и вперед!";
+
+//Registration certificate screen
+"registration_certificate"= "Свидетельство о регистрации";
+"registration_registration_certificate_tip"= "Ваш запрос будет отправлен на подтверждение. Уведомление будет выслан после подтверждения.";
+"registration_certificate_warning"= "\nПредоставьте Фото Техпаспорта.\n\n";
+"registration_certificate_tip"= "Убедтитесь в просматриваемости и считываемости вашего документа.";
+
+//Phone verification screen
+"verify_number"= "Подтвердить номер";
+"phone_number_tip"= "Пожалуйста, введите свой номер телефон";
+
+//SMS verification screen
+"sms_code_placeholder"= "Введите код";
+"sms_code_verify"= "Подтвердить";
+"sms_code_resend"= "Получите новый код";
+"sms_code_tip"= "Пожалуйста, введите отправленное вам SMS";
+
+//Success scren
+"success"= "Успех!";
+"number_verification_success"= "Ваш номер подтвержден";
+"continue"= "Продолжай";
+
+//User info screen
+"name_of_user"= "Имя";
+"surname_of_user"= "Фамилия";
+"confirm_password"= "Подтвердить пароль";
+"password_mismatch_error"= "Пароли должны совпадать";
+"password_policy_rule"= "Пароль должен состоять как минимум из 6 знаков.";
+
+//Settings screen
+"settings_saved_messages"= "Сохраненные сообщения и сообщения";
+"saved_messages.empty_list" = "Нет сохраненных сообщений для отображения.";
+"settings_change_license_plate"= "Измени свой автомобиль";
+"settings_notfications_and_alerts" = "Уведомления и оповещения";
+"settings_language"= "Язык";
+"settings_support"= "Служба поддержки";
+"settings_log_out"= "Выйти";
+"settings_log_out_warning"= "Вы хотите покинуть приложение?";
+"settings_delete_accountt"= "Удалить свой аккаунт";
+
+//Delete account screen
+"delete_account_warning"= "Вы уверены, что хотите удалить свою учетную запись?";
+"yes_delete"= "Да, Удалить";
+
+//Add friends screen
+"suggested_friends"= "Предложенные друзья";
+
+//Friend requests screen
+"friend_requests_add_page_title"= "Добавить друга";
+"friend_requests_accept_request"= "Принять";
+"friend_requests_decline_request"= "Отклонить";
+"friend_requests_request_sent"= "Запрос на добавление в друзья отправлен";
+"friend_requests_request_accepted" = "✓\Принято";
+"friend_requests_request_declined" = "✗\Отклонено";
+"friend_requests_nobody_found" = "Никто не найден";
+"friend_requests_send_request" = "Отправить запрос";
+
+
+//Global groups screen
+"cars_category"= "Автомобили";
+"saloons_category"= "Салоны";
+"services_category"= "Услуги";
+
+//User support screen
+"or_contact_us"= "Или свяжитесь с нами:";
+
+//Notifications and alerts screen
+"show_notifications"= "Показать уведомления";
+"sound"= "Звук";
+"notification_sound_picker_title"= "Выберите звук";
+
+//Edit license plate screen
+"change_username_button_title"= "Поменять авто";
+"change_username_attach_documents"= "Прикреплять";
+
+//Post screen
+"write_a_comment"= "Написать комментарий";
+
+//Chats
+"forwarded"= "Пересылаются";
+"message"= "Сообщение";
+"message_from_you" = "Ты";
+
+//Last Activity
+"last_activity.online"= "В сети";
+"last_activity.offline"= "Не в сети";
+"was_online"= "Онлайн %d минут назад";
+"last_activity.justNow"= "Онлайн только что";
+"last_activity.online_minutes_ago"= "Онлайн %d минут назад";
+"last_activity.online_hours_ago"= "В сети %d часов назад";
+"last_activity.online_yesterday"= "Вчера был онлайн";
+"last_activity.online_exact_date"= "В сети %@";
+
+//Chat Status
+"chat.status.typing"= "печатает...";
+
+//Message actions
+"save"= "Сохранить";
+"unsave"= "Забывать";
+"copy"= "Копировать";
+"reply"= "Ответить";
+"forward"= "Переслать";
+"delete"= "Удалить";
+
+//Post actions
+"post_comments"= "%lu Комментарии";
+"post_share"= "Поделиться";
+
+//Account screen
+"user_full_name"= "Имя Фамилия";
+"user_name"= "Имя";
+"user_surname"= "Фамилия";
+"user_phone-number"= "Номер телефона";
+"user_career"= "Карьера";
+"user_about"= "Статус";
+"user_education"= "Образование";
+"user_interests"= "Интересы";
+
+//Select from contacts
+"select_from_contacts"= "Выберите из контактов";
+"recent_chats"= "Последние чаты";
+
+// StickyInput
+"sticky_input_slide_to_cancel" = "< Слайд для отмены";
+"photo_source_camera"= "Kамера";
+"photo_source_photos"= "Альбом";
+
+//Crate post screen
+"create_post"= "Начать публикацию";
+"send_post"= "Опубликовать";
+
+//Registration status
+"registration_status_pending_hint"= "Наши модераторы рассматривают ваш запрос. Пожалуйста ждите уведомления";
+"registration_status_approved_hint" = "Поздравляем, Вы одобрены! Подтвердите сейчас, чтобы продолжить.";
+"registration_status_rejected_incorrect_documents_hint"= "Вы получили отказ из-за неправильного документа. Повторите попытку.";
+"registration_status_rejected_illegible_documents_hint"= "Вы были отклонены из-за того, что предоставленный вами документ не может быть прочитан. Повторите попытку.";
+"registration_status_failed_to_fetch_hint" = "Не удалось получить статус! Проверьте позднее.";
+"registration_status_fetching_hint"= "Статус загрузки ...";
+"registration_status_verify_now"= "Подтвердить сейчас!";
+"registration_status_try_again"= "Повторить попытку";
+
+//
+"photos_access_denied"= "Oops, доступ к вашей фотогалерее был ограничен. Пожалуйста, перейдите в Настройки приложения на вашем мобильном устройстве.";
+
+//
+"self_shared_post_message_body"= "Вы поделились пост";
+"others_shared_post_message_body"= "Поделились пост";
+"voice_message_body"= "Голос";
+"photo_message_body"= "Фото";
+
+//
+"password_reset_link_success" = "Ссылка для сброса пароля была отправлена просмотреть SMS";
+
+"API_CANCEL_TITLE" = "Cancel";
+
+//Roster
+"roster.cell.pendingRequest" = "Запрос ожидает выполнения";
+"roster.empty_list" = "У вас еще нет друзей, попробуйте добавить их!";
+
+//Posts
+"posts.empty_list" = "Нет сообщений для отображения. Напишите первый пост!";
